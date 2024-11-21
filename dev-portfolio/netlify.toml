@@ -1,0 +1,11 @@
+[build]
+  command = "bun install && bun run build"
+  publish = ".svelte-kit/netlify"
+  
+[build.environment]
+  NETLIFY_USE_BUN = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
