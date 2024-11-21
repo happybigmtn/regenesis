@@ -48,7 +48,7 @@
             <div class="resources">
               <h4>Resources</h4>
               <ul class="resources-list">
-                {#each area.resources.filter(r => r.status !== 'completed') as resource}
+                {#each area.resources.filter((r) => r.status !== "completed") as resource}
                   <li class="resource">
                     <div class="resource-header">
                       <span class="resource-title">
@@ -160,7 +160,7 @@
   }
 
   .resource-title {
-    font-weight: 500;
+    font-weight: 700;
     color: var(--color-text-primary);
   }
 
